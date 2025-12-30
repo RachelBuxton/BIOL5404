@@ -12,8 +12,6 @@ toc-title: BIOL 5404 A3
 link-external-newwindow: true
 ---
 
-[Back to assignment list](index.html#assignments)
-
 ## Instructions
 
 -   Create a new .R script to complete this assignment in your local assignments folder for this course.

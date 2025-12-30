@@ -9,8 +9,6 @@ toc: false
 link-external-newwindow: true
 ---
 
-[Back to assignment list](index.html#assignments)
-
 ## Instructions: your own EDA
 
 -   Create a new .R script to complete this assignment in your local assignments folder for this course.
