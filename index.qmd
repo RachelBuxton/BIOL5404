@@ -1,6 +1,6 @@
 ---
 title: "BIOL 5404 Biological Data Science in R"
-author: "Rachel Buxton sub for Roz Dakin"
+author: "Rachel Buxton, course developed by Roz Dakin"
 hidedate: true
 format: html
 editor: visual
@@ -42,17 +42,17 @@ We may also use [Advanced R 2e](https://adv-r.hadley.nz/) by Hadley Wickham
 
 ### Assignments {#assignments}
 
--   [Assignment 1 due January 18, 2025](assignment 1.html)
+-   [Assignment 1 due January 18, 2026](assignment 1.html)
 
--   [Assignment 2 due February 2, 2025](assignment_2.html)
+-   [Assignment 2 due February 1, 2026](assignment_2.html)
 
--   [Assignment 3 due February 16, 2025](assignment_3.html)
+-   [Assignment 3 due February 15, 2026](assignment_3.html)
 
--   [Assignment 4 due March 2, 2025](assignment_4.html)
+-   [Assignment 4 due March 1, 2026](assignment_4.html)
 
--   [Assignment 5 due March 16, 2025](assignment_5.html)
+-   [Assignment 5 due March 15, 2026](assignment_5.html)
 
--   [Assignment 6 due March 30, 2025](assignment_6.html)
+-   [Assignment 6 due March 29, 2026](assignment_6.html)
 
 ------------------------------------------------------------------------
 
@@ -116,7 +116,7 @@ We may also use [Advanced R 2e](https://adv-r.hadley.nz/) by Hadley Wickham
 | 12          | Mar 27           | markdown and git            | -   r4ds Section 28                     |
 |             |                  |                             | -   [**Assignment #6**]{.smallcaps}     |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-|             | **Apr 13**       | **Independent report due**  |                                         |
+|             | **Apr 17**       | **Independent report due**  |                                         |
 +-------------+------------------+-----------------------------+-----------------------------------------+
 
 ### Late Policy
