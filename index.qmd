@@ -1,6 +1,6 @@
 ---
 title: "BIOL 5404 Biological Data Science in R"
-author: "Roz Dakin"
+author: "Rachel Buxton sub for Roz Dakin"
 hidedate: true
 format: html
 editor: visual
@@ -11,12 +11,12 @@ link-external-newwindow: true
 
 **Course Description:** This course introduces the practical skills needed to answer biological research questions with large and complex datasets in a reproducible manner. There is a growing demand for data analyses that are openly available, well annotated, and reusable by others. In this course, we will cover how to tidy, transform, visualize, model, and communicate datasets in R, with a focus on large and complex data. The course is aimed at graduate students with some prior experience with statistics at the undergraduate or graduate level, but no prior experience with R is required.
 
-+-------------------------------+-------------------+
-| Professor: Dr. Roz Dakin      | Office: CTTC 4440 |
-+-------------------------------+-------------------+
-| Fridays, 11:35 - 14:25\       | Southam Hall 303  |
-| In person, synchronous course |                   |
-+-------------------------------+-------------------+
++-------------------------------+------------------------+
+| Professor: Dr. Rachel Buxton  | Office: Hertzberg 4438 |
++-------------------------------+------------------------+
+| Fridays, 8:35 - 11:25\        | Southam Hall 415       |
+| In person, synchronous course |                        |
++-------------------------------+------------------------+
 
 ### Goals for this Course
 
@@ -42,7 +42,7 @@ We may also use [Advanced R 2e](https://adv-r.hadley.nz/) by Hadley Wickham
 
 ### Assignments {#assignments}
 
--   [Assignment 1 due January 19, 2025](assignment_1.html)
+-   [Assignment 1 due January 18, 2025](assignment 1.html)
 
 -   [Assignment 2 due February 2, 2025](assignment_2.html)
 
