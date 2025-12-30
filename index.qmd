@@ -75,45 +75,45 @@ We may also use [Advanced R 2e](https://adv-r.hadley.nz/) by Hadley Wickham
 +-------------+------------------+-----------------------------+-----------------------------------------+
 | Week        | Date             | Topics                      | Activities                              |
 +=============+==================+=============================+=========================================+
-| 1           | Jan 10           | Intro, philosopy, tidy data | -   Install R and R Studio              |
+| 1           | Jan 9            | Intro, philosopy, tidy data | -   Install R and R Studio              |
 |             |                  |                             | -   Read Roche et al.                   |
 |             |                  |                             | -   Read Alston & Rick                  |
 |             |                  |                             | -   Irizarry Section 1                  |
 |             |                  |                             | -   r4ds Introduction                   |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 2           | Jan 17           | R basics                    | -   Irizarry Section 2                  |
+| 2           | Jan 16           | R basics                    | -   Irizarry Section 2                  |
 |             |                  |                             | -   r4ds Section 2                      |
 |             |                  |                             | -   [**Assignment #1**]{.smallcaps}     |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 3           | Jan 24           | Programming basics          | -   Read Noble 2009                     |
+| 3           | Jan 23           | Programming basics          | -   Read Noble 2009                     |
 |             |                  |                             | -   Irizarry Sections 3 & 6             |
 |             |                  |                             | -   r4ds Section 6                      |
 |             |                  |                             | -   Extra: r4ds Section 27              |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 4           | Jan 31           | tidyverse & data            | -   Irizarry Section 4                  |
+| 4           | Jan 30           | tidyverse & data            | -   Irizarry Section 4                  |
 |             |                  |                             | -   [**Assignment #2**]{.smallcaps}     |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 5           | Feb 7            | tidyverse & data            | -   Irizarry Sections 11-12             |
+| 5           | Feb 6            | tidyverse & data            | -   Irizarry Sections 11-12             |
 |             |                  |                             | -   Read Broman & Woo                   |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 6           | Feb 14           | Visualization, part 1       | -   Irizarry Sections 7-8               |
+| 6           | Feb 13           | Visualization, part 1       | -   Irizarry Sections 7-8               |
 |             |                  |                             | -   [**Assignment #3**]{.smallcaps}     |
 +-------------+------------------+-----------------------------+-----------------------------------------+
 |             | **WINTER BREAK** |                             | -   Read Kelleher & Wagener             |
 |             |                  |                             | -   Read Dekker & Silva                 |
 |             |                  |                             | -   Work on book sections to come...    |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 8           | Feb 28           | Visualization, part 2       | -   Irizarry Sections 9-10              |
+| 8           | Feb 27           | Visualization, part 2       | -   Irizarry Sections 9-10              |
 |             |                  |                             | -   [**Assignment #4**]{.smallcaps}     |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 9           | Mar 7            | Exploratory data analysis   | -   r4ds Section 10                     |
+| 9           | Mar 6            | Exploratory data analysis   | -   r4ds Section 10                     |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 10          | Mar 14           | \*\* No formal meeting \*\* | -   [**Assignment #5**]{.smallcaps}     |
+| 10          | Mar 13           | \*\* No formal meeting \*\* | -   [**Assignment #5**]{.smallcaps}     |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 11          | Mar 21           | Strings and dates           | -   Irizarry Section 13                 |
+| 11          | Mar 20           | Strings and dates           | -   Irizarry Section 13                 |
 |             |                  |                             | -   Irizarry 16.1-16.3, 16.5-16.6, 16.9 |
 +-------------+------------------+-----------------------------+-----------------------------------------+
-| 12          | Mar 28           | markdown and git            | -   r4ds Section 28                     |
+| 12          | Mar 27           | markdown and git            | -   r4ds Section 28                     |
 |             |                  |                             | -   [**Assignment #6**]{.smallcaps}     |
 +-------------+------------------+-----------------------------+-----------------------------------------+
 |             | **Apr 13**       | **Independent report due**  |                                         |

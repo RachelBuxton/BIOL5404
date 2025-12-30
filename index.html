@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<!-- saved from url=(0022)http://localhost:5593/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Roz Dakin">
+<meta name="author" content="Rachel Buxton sub for Roz Dakin">
 
 <title>BIOL 5404 Biological Data Science in R</title>
-<style>
+<style class="anchorjs"></style><style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -24,37 +25,38 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="./index_files/clipboard.min.js.download"></script>
+<script src="./index_files/quarto.js.download" type="module"></script>
+<script src="./index_files/tabsets.js.download" type="module"></script>
+<script src="./index_files/popper.min.js.download"></script>
+<script src="./index_files/tippy.umd.min.js.download"></script>
+<script src="./index_files/anchor.min.js.download"></script>
+<link href="./index_files/tippy.css" rel="stylesheet">
+<link href="./index_files/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="./index_files/bootstrap.min.js.download"></script>
+<link href="./index_files/bootstrap-icons.css" rel="stylesheet">
+<link href="./index_files/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
-</head>
+<style>.ansi-display{font-family:monospace;white-space:pre-wrap;--ansiBlack: #000000;--ansiRed: #cd3131;--ansiGreen: #00BC00;--ansiYellow: #949800;--ansiBlue: #0451a5;--ansiMagenta: #bc05bc;--ansiCyan: #0598bc;--ansiWhite: #555555;--ansiBrightBlack: #666666;--ansiBrightRed: #cd3131;--ansiBrightGreen: #14CE14;--ansiBrightYellow: #b5ba00;--ansiBrightBlue: #0451a5;--ansiBrightMagenta: #bc05bc;--ansiBrightCyan: #0598bc;--ansiBrightWhite: #a5a5a5}.dark-mode .ansi-display{--ansiBlack: #000000;--ansiRed: #cd3131;--ansiGreen: #0DBC79;--ansiYellow: #e5e510;--ansiBlue: #2472c8;--ansiMagenta: #bc3fbc;--ansiCyan: #11a8cd;--ansiWhite: #e5e5e5;--ansiBrightBlack: #666666;--ansiBrightRed: #f14c4c;--ansiBrightGreen: #23d18b;--ansiBrightYellow: #f5f543;--ansiBrightBlue: #3b8eea;--ansiBrightMagenta: #d670d6;--ansiBrightCyan: #29b8db;--ansiBrightWhite: #e5e5e5}@keyframes ansi-displaly-run-blink{50%{opacity:0}}.fui-FluentProvider h2{border-bottom:none;padding-bottom:0}</style><style data-make-styles-bucket="d" data-priority="0"></style><style id="fui-FluentProviderr0"></style></head>
 
-<body>
+<body class="quarto-light" data-tabster="{&quot;root&quot;:{}}">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<i tabindex="0" role="none" data-tabster-dummy="" aria-hidden="true" style="position: fixed; height: 1px; width: 1px; opacity: 0.001; z-index: -1; content-visibility: hidden; top: 0px; left: 0px;"></i><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
   <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#goals-for-this-course" id="toc-goals-for-this-course" class="nav-link active" data-scroll-target="#goals-for-this-course">Goals for this Course</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
-  <li><a href="#weekly-schedule" id="toc-weekly-schedule" class="nav-link" data-scroll-target="#weekly-schedule">Weekly Schedule</a></li>
-  <li><a href="#late-policy" id="toc-late-policy" class="nav-link" data-scroll-target="#late-policy">Late Policy</a></li>
-  <li><a href="#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity">Academic Integrity</a></li>
-  <li><a href="#statement-on-chatgptgenerative-ai-usage" id="toc-statement-on-chatgptgenerative-ai-usage" class="nav-link" data-scroll-target="#statement-on-chatgptgenerative-ai-usage">Statement on ChatGPT/Generative AI usage</a></li>
-  <li><a href="#accommodations" id="toc-accommodations" class="nav-link" data-scroll-target="#accommodations">Accommodations</a></li>
+  <li><a href="http://localhost:5593/#goals-for-this-course" id="toc-goals-for-this-course" class="nav-link active" data-scroll-target="#goals-for-this-course">Goals for this Course</a></li>
+  <li><a href="http://localhost:5593/#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="http://localhost:5593/#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
+  <li><a href="http://localhost:5593/#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
+  <li><a href="http://localhost:5593/#weekly-schedule" id="toc-weekly-schedule" class="nav-link" data-scroll-target="#weekly-schedule">Weekly Schedule</a></li>
+  <li><a href="http://localhost:5593/#late-policy" id="toc-late-policy" class="nav-link" data-scroll-target="#late-policy">Late Policy</a></li>
+  <li><a href="http://localhost:5593/#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity">Academic Integrity</a></li>
+  <li><a href="http://localhost:5593/#statement-on-chatgptgenerative-ai-usage" id="toc-statement-on-chatgptgenerative-ai-usage" class="nav-link" data-scroll-target="#statement-on-chatgptgenerative-ai-usage">Statement on ChatGPT/Generative AI usage</a></li>
+  <li><a href="http://localhost:5593/#accommodations" id="toc-accommodations" class="nav-link" data-scroll-target="#accommodations">Accommodations</a></li>
   </ul>
 </nav>
 </div>
@@ -74,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Roz Dakin </p>
+             <p>Rachel Buxton sub for Roz Dakin </p>
           </div>
   </div>
     
@@ -91,22 +93,22 @@ ul.task-list li input[type="checkbox"] {
 <table class="caption-top table">
 <colgroup>
 <col style="width: 44%">
-<col style="width: 27%">
+<col style="width: 34%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Professor: Dr.&nbsp;Roz Dakin</td>
-<td>Office: CTTC 4440</td>
+<td>Professor: Dr.&nbsp;Rachel Buxton</td>
+<td>Office: Hertzberg 4438</td>
 </tr>
 <tr class="even">
-<td>Fridays, 11:35 - 14:25<br>
+<td>Fridays, 8:35 - 11:25<br>
 In person, synchronous course</td>
-<td>Southam Hall 303</td>
+<td>Southam Hall 415</td>
 </tr>
 </tbody>
 </table>
 <section id="goals-for-this-course" class="level3">
-<h3 class="anchored" data-anchor-id="goals-for-this-course">Goals for this Course</h3>
+<h3 class="anchored" data-anchor-id="goals-for-this-course">Goals for this Course<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5593/#goals-for-this-course" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
 <ol type="1">
 <li>Develop proficiency in the R programming language</li>
 <li>Practice using R to explore, wrangle, graph, and model realistic (complex) research datasets</li>
@@ -118,29 +120,29 @@ In person, synchronous course</td>
 <hr>
 </section>
 <section id="resources" class="level3">
-<h3 class="anchored" data-anchor-id="resources">Resources</h3>
+<h3 class="anchored" data-anchor-id="resources">Resources<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5593/#resources" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
 <p>We will use these two (free!) books:</p>
 <ul>
-<li><a href="http://rafalab.dfci.harvard.edu/dsbook-part-1/">Introduction to Data Science</a> by Rafael A. Irizarry</li>
-<li><a href="https://r4ds.hadley.nz/">R for Data Science 2e</a> by Wickham, Çetinkaya-Rundel &amp; Grolemund</li>
+<li><a href="http://rafalab.dfci.harvard.edu/dsbook-part-1/" target="_blank" rel="noopener">Introduction to Data Science</a> by Rafael A. Irizarry</li>
+<li><a href="https://r4ds.hadley.nz/" target="_blank" rel="noopener">R for Data Science 2e</a> by Wickham, Çetinkaya-Rundel &amp; Grolemund</li>
 </ul>
-<p>We may also use <a href="https://adv-r.hadley.nz/">Advanced R 2e</a> by Hadley Wickham</p>
+<p>We may also use <a href="https://adv-r.hadley.nz/" target="_blank" rel="noopener">Advanced R 2e</a> by Hadley Wickham</p>
 <hr>
 </section>
 <section id="assignments" class="level3">
-<h3 class="anchored" data-anchor-id="assignments">Assignments</h3>
+<h3 class="anchored" data-anchor-id="assignments">Assignments<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5593/#assignments" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
 <ul>
-<li><p><a href="assignment_1.html">Assignment 1 due January 19, 2025</a></p></li>
-<li><p><a href="assignment_2.html">Assignment 2 due February 2, 2025</a></p></li>
-<li><p><a href="assignment_3.html">Assignment 3 due February 16, 2025</a></p></li>
-<li><p><a href="assignment_4.html">Assignment 4 due March 2, 2025</a></p></li>
-<li><p><a href="assignment_5.html">Assignment 5 due March 16, 2025</a></p></li>
-<li><p><a href="assignment_6.html">Assignment 6 due March 30, 2025</a></p></li>
+<li><p><a href="http://localhost:5593/assignment%201.html">Assignment 1 due January 18, 2025</a></p></li>
+<li><p><a href="http://localhost:5593/assignment_2.html">Assignment 2 due February 2, 2025</a></p></li>
+<li><p><a href="http://localhost:5593/assignment_3.html">Assignment 3 due February 16, 2025</a></p></li>
+<li><p><a href="http://localhost:5593/assignment_4.html">Assignment 4 due March 2, 2025</a></p></li>
+<li><p><a href="http://localhost:5593/assignment_5.html">Assignment 5 due March 16, 2025</a></p></li>
+<li><p><a href="http://localhost:5593/assignment_6.html">Assignment 6 due March 30, 2025</a></p></li>
 </ul>
 <hr>
 </section>
 <section id="evaluation" class="level3">
-<h3 class="anchored" data-anchor-id="evaluation">Evaluation</h3>
+<h3 class="anchored" data-anchor-id="evaluation">Evaluation<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5593/#evaluation" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 16%">
@@ -179,7 +181,7 @@ In person, synchronous course</td>
 </table>
 </section>
 <section id="weekly-schedule" class="level3">
-<h3 class="anchored" data-anchor-id="weekly-schedule">Weekly Schedule</h3>
+<h3 class="anchored" data-anchor-id="weekly-schedule">Weekly Schedule<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5593/#weekly-schedule" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 13%">
@@ -198,7 +200,7 @@ In person, synchronous course</td>
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td>Jan 10</td>
+<td>Jan 9</td>
 <td>Intro, philosopy, tidy data</td>
 <td><ul>
 <li>Install R and R Studio</li>
@@ -210,7 +212,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td>Jan 17</td>
+<td>Jan 16</td>
 <td>R basics</td>
 <td><ul>
 <li>Irizarry Section 2</li>
@@ -220,7 +222,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="odd">
 <td>3</td>
-<td>Jan 24</td>
+<td>Jan 23</td>
 <td>Programming basics</td>
 <td><ul>
 <li>Read Noble 2009</li>
@@ -231,7 +233,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td>Jan 31</td>
+<td>Jan 30</td>
 <td>tidyverse &amp; data</td>
 <td><ul>
 <li>Irizarry Section 4</li>
@@ -240,7 +242,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="odd">
 <td>5</td>
-<td>Feb 7</td>
+<td>Feb 6</td>
 <td>tidyverse &amp; data</td>
 <td><ul>
 <li>Irizarry Sections 11-12</li>
@@ -249,7 +251,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="even">
 <td>6</td>
-<td>Feb 14</td>
+<td>Feb 13</td>
 <td>Visualization, part 1</td>
 <td><ul>
 <li>Irizarry Sections 7-8</li>
@@ -268,7 +270,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="even">
 <td>8</td>
-<td>Feb 28</td>
+<td>Feb 27</td>
 <td>Visualization, part 2</td>
 <td><ul>
 <li>Irizarry Sections 9-10</li>
@@ -277,7 +279,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="odd">
 <td>9</td>
-<td>Mar 7</td>
+<td>Mar 6</td>
 <td>Exploratory data analysis</td>
 <td><ul>
 <li>r4ds Section 10</li>
@@ -285,7 +287,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="even">
 <td>10</td>
-<td>Mar 14</td>
+<td>Mar 13</td>
 <td>** No formal meeting **</td>
 <td><ul>
 <li><span class="smallcaps"><strong>Assignment #5</strong></span></li>
@@ -293,7 +295,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="odd">
 <td>11</td>
-<td>Mar 21</td>
+<td>Mar 20</td>
 <td>Strings and dates</td>
 <td><ul>
 <li>Irizarry Section 13</li>
@@ -302,7 +304,7 @@ In person, synchronous course</td>
 </tr>
 <tr class="even">
 <td>12</td>
-<td>Mar 28</td>
+<td>Mar 27</td>
 <td>markdown and git</td>
 <td><ul>
 <li>r4ds Section 28</li>
@@ -319,270 +321,273 @@ In person, synchronous course</td>
 </table>
 </section>
 <section id="late-policy" class="level3">
-<h3 class="anchored" data-anchor-id="late-policy">Late Policy</h3>
+<h3 class="anchored" data-anchor-id="late-policy">Late Policy<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5593/#late-policy" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
 <p>Work that is not submitted by the deadline will receive a grade of 0, unless you have made a specific agreement with me before the deadline.</p>
 <hr>
 </section>
 <section id="academic-integrity" class="level3">
-<h3 class="anchored" data-anchor-id="academic-integrity">Academic Integrity</h3>
-<p>As a class, we will comply with <a href="https://carleton.ca/registrar/academic-integrity/">Carleton’s guidelines on academic integrity</a>.</p>
+<h3 class="anchored" data-anchor-id="academic-integrity">Academic Integrity<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5593/#academic-integrity" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
+<p>As a class, we will comply with <a href="https://carleton.ca/registrar/academic-integrity/" target="_blank" rel="noopener">Carleton’s guidelines on academic integrity</a>.</p>
 <p>It’s OK (and encouraged) to work with other students on weekly assignments and quizzes in this course. I strongly encourage you to <strong>help each other out</strong> when troubleshooting in R. When working together, you should strive to contribute so that working together is mutually beneficial.</p>
 <p>The exploratory data analysis and independent report <u>must</u> represent <strong>your own original investigation of the data</strong> (though you can obtain the data anywhere you wish – there is no requirement that you generated the data).</p>
 <p>As part of this course, you will also be expected to evaluate and provide feedback on work by your peers. Please respect each other. I expect you to contribute by <strong>providing your peers with</strong> <strong>thoughtful feedback</strong>, and to be fair and honest in your peer evaluations.</p>
 <hr>
 </section>
 <section id="statement-on-chatgptgenerative-ai-usage" class="level3">
-<h3 class="anchored" data-anchor-id="statement-on-chatgptgenerative-ai-usage">Statement on ChatGPT/Generative AI usage</h3>
+<h3 class="anchored" data-anchor-id="statement-on-chatgptgenerative-ai-usage">Statement on ChatGPT/Generative AI usage<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5593/#statement-on-chatgptgenerative-ai-usage" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
 <p>I encourage you to use AI tools to help with troubleshooting in R.</p>
 <p>As our understanding of the uses of AI and its relationship to student work and academic integrity continue to evolve, students are required to discuss their use of AI in any circumstance not described here with the course instructor to ensure it supports the learning goals for the course.</p>
 <hr>
 </section>
 <section id="accommodations" class="level3">
-<h3 class="anchored" data-anchor-id="accommodations">Accommodations</h3>
+<h3 class="anchored" data-anchor-id="accommodations">Accommodations<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5593/#accommodations" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
 <p>Please review the course schedule and contact me with any requests for academic accommodation during the first two weeks of class, or as soon as possible after the need is known to exist.</p>
 </section>
 
 </main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          if (link.getAttribute("rel") === null) {
-            link.setAttribute("rel", "noopener");
-          }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
+      return false;
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
-        return container.innerHTML
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -590,188 +595,184 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 
 
 
-</body></html>
+
+<script>
+  window.backupDefine = window.define;
+  window.define = undefined;
+</script>
+<script type="text/javascript" src="./index_files/quarto-preview.js.download"></script>
+<script>
+  window.define = window.backupDefine;
+  window.backupDefine = undefined;
+</script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    window.QuartoPreview.init({
+      origin: "",
+      search: "",
+      inputFile: "C:\Users\rachelbuxton\Documents\BIOL5404\Assignments\BIOL5404\index.qmd",
+      isPresentation: false
+    });
+  })
+</script>
+<div><div dir="ltr" class="fui-FluentProvider fui-FluentProviderr0 ___jdtuxv0 f19n0e5 fxugw4r f1o700av fk6fouc fkhj508 figsok6 f1i3iumi"></div></div><i tabindex="0" role="none" data-tabster-dummy="" aria-hidden="true" style="position: fixed; height: 1px; width: 1px; opacity: 0.001; z-index: -1; content-visibility: hidden; top: 0px; left: 0px;"></i></body></html>
